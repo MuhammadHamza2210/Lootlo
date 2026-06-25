@@ -21,4 +21,6 @@ ENV PORT=7860
 EXPOSE 7860
 
 # gunicorn serves the Flask "app" object from app.py on Hugging Face's port
-CMD ["gunicorn", "--bind", "0.0.0.0:7860", "--workers", "2", "--timeout", "120", "app:app"]
+# --preload imports the app once in the master (so init_db runs a single time
+# before workers fork), avoiding a multi-worker race on database seeding.
+CMD ["gunicorn", "--bind", "0.0.0.0:7860", "--workers", "2", "--preload", "--timeout", "120", "app:app"]

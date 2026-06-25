@@ -195,7 +195,7 @@ def init_db():
     cur.execute("SELECT COUNT(*) c FROM users WHERE role='admin'")
     if cur.fetchone()["c"] == 0:
         cur.execute(
-            "INSERT INTO users (name,email,phone,password,role,created_at) VALUES (?,?,?,?,?,?)",
+            "INSERT OR IGNORE INTO users (name,email,phone,password,role,created_at) VALUES (?,?,?,?,?,?)",
             (
                 DEFAULT_ADMIN["name"],
                 DEFAULT_ADMIN["email"],
