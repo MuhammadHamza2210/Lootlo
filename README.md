@@ -10,6 +10,9 @@ pinned: false
 
 # 🛒 LootLo — Premium Online Shopping
 
+> 🔴 **Live demo:** **https://muhammadhamza221003-lootlo.hf.space**
+> (admin login — `lootlo@gmail.com` / `lootlo123`)
+
 A full-stack e-commerce web app with a **Flask + SQLite** backend and a
 **glassmorphism / aurora** UI. Everything (users, products, orders, reviews,
 inventory…) is saved in `lootlo.db`, so your data survives restarts.
