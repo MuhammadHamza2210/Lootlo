@@ -1,0 +1,722 @@
+[
+  {
+    "id": 1,
+    "name": "TCL 43-inch 4K Smart LED TV",
+    "brand": "TCL",
+    "price": 45000,
+    "category": "Electronics",
+    "image": "images/led tcl.jpg",
+    "description": "43-inch 4K Ultra HD Smart LED TV with HDR. Built-in Wi-Fi, multiple HDMI ports, and access to popular streaming apps. Energy efficient with 1-year warranty.",
+    "inventory": {
+      "stock": 15,
+      "reorderLevel": 5,
+      "costPrice": 40000,
+      "supplier": "TCL Pakistan",
+      "sku": "TCL-43UHD-001"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Samsung 50-inch Crystal UHD TV",
+    "brand": "Samsung",
+    "price": 85000,
+    "category": "Electronics",
+    "image": "images/samsung led.jpg",
+    "description": "50-inch Crystal UHD 4K Smart TV with Crystal Processor 4K. PurColor technology for vibrant colors and built-in voice assistants. 2-year warranty.",
+    "inventory": {
+      "stock": 8,
+      "reorderLevel": 3,
+      "costPrice": 75000,
+      "supplier": "Samsung Electronics",
+      "sku": "SAM-50Crystal-002"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Gree 1.5 Ton Inverter Split AC",
+    "brand": "Gree",
+    "price": 95000,
+    "category": "Electronics",
+    "image": "images/gree ac.webp",
+    "description": "1.5 Ton Inverter Split AC with R32 Eco-friendly Refrigerant. Energy saving with 5-star rating, self-cleaning function, and sleep mode. 5-year compressor warranty.",
+    "inventory": {
+      "stock": 6,
+      "reorderLevel": 2,
+      "costPrice": 85000,
+      "supplier": "Gree Pakistan",
+      "sku": "GREE-1.5T-003"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Dawlance 8.5kg Frost-Free Refrigerator",
+    "brand": "Dawlance",
+    "price": 65000,
+    "category": "Electronics",
+    "image": "images/dawlance refi.webp",
+    "description": "8.5kg Refrigerator with Frost-Free technology, digital temperature control, and energy-saving mode. Spacious interior with adjustable shelves. 5-year warranty.",
+    "inventory": {
+      "stock": 12,
+      "reorderLevel": 4,
+      "costPrice": 58000,
+      "supplier": "Dawlance Ltd",
+      "sku": "DAW-8.5FF-004"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Haier Inverter Refrigerator 15 Cu Ft",
+    "brand": "Haier",
+    "price": 42000,
+    "category": "Electronics",
+    "image": "images/haier refi.webp",
+    "description": "15 Cu Ft Inverter Refrigerator with Frost-Free technology, digital temperature control, and an energy-saving inverter compressor. Spacious interior with adjustable glass shelves and a large vegetable crisper. 10-year compressor warranty.",
+    "inventory": {
+      "stock": 10,
+      "reorderLevel": 3,
+      "costPrice": 38000,
+      "supplier": "Haier Pakistan",
+      "sku": "HAI-REF15-005"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Nike Air Max Running Shoes",
+    "brand": "Nike",
+    "price": 14500,
+    "category": "Shoes",
+    "image": "images/nike shoes.webp",
+    "description": "Men's Air Max running shoes with breathable mesh upper, cushioned midsole for comfort, and durable rubber outsole. Perfect for running and casual wear.",
+    "inventory": {
+      "stock": 25,
+      "reorderLevel": 8,
+      "costPrice": 12000,
+      "supplier": "Nike Pakistan",
+      "sku": "NIKE-AirMax-006"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Servis Cheetah Sports Shoes",
+    "brand": "Servis",
+    "price": 3500,
+    "category": "Shoes",
+    "image": "images/servis.webp",
+    "description": "Men's Cheetah sports shoes with comfortable cushioning, flexible sole, and breathable design. Suitable for casual wear and light sports activities.",
+    "inventory": {
+      "stock": 50,
+      "reorderLevel": 15,
+      "costPrice": 2800,
+      "supplier": "Servis Shoes",
+      "sku": "SERV-Cheetah-007"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Adidas Boost Running Shoes",
+    "brand": "Adidas",
+    "price": 22000,
+    "category": "Shoes",
+    "image": "images/adidas.webp",
+    "description": "Premium running shoes with Boost midsole technology for maximum energy return, Primeknit upper for adaptive fit, and Continental rubber outsole for traction.",
+    "inventory": {
+      "stock": 18,
+      "reorderLevel": 6,
+      "costPrice": 18000,
+      "supplier": "Adidas Pakistan",
+      "sku": "ADID-Boost-008"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Bata Formal Leather Shoes",
+    "brand": "Bata",
+    "price": 5500,
+    "category": "Shoes",
+    "image": "images/bata.jpg",
+    "description": "Men's formal leather shoes with classic design, comfortable insoles, and durable construction. Perfect for office wear and formal occasions.",
+    "inventory": {
+      "stock": 30,
+      "reorderLevel": 10,
+      "costPrice": 4500,
+      "supplier": "Bata Pakistan",
+      "sku": "BATA-Formal-009"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Men's Blue Sneakers",
+    "brand": "Urban Steps",
+    "price": 4800,
+    "category": "Shoes",
+    "image": "images/Men Sneaker-BLUE.webp",
+    "description": "Stylish blue sneakers with comfortable cushioning and modern design. Perfect for casual outings and everyday wear with excellent grip and durability.",
+    "inventory": {
+      "stock": 40,
+      "reorderLevel": 12,
+      "costPrice": 3800,
+      "supplier": "Urban Steps",
+      "sku": "URBN-Sneaker-010"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Premium Cotton Long Sleeve Shirt",
+    "brand": "Hamza's Collection",
+    "price": 2500,
+    "category": "Shirts",
+    "image": "images/shirt long sleeve.jfif",
+    "description": "Premium cotton long sleeve formal shirt with classic collar, button-down front, and tailored fit. Available in multiple colors and sizes.",
+    "inventory": {
+      "stock": 35,
+      "reorderLevel": 10,
+      "costPrice": 1800,
+      "supplier": "Hamza Textiles",
+      "sku": "HMZA-Shirt-011"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Stylish Pattern Casual Shirt",
+    "brand": "Needles",
+    "price": 3200,
+    "category": "Shirts",
+    "image": "images/shirt needles.jpg",
+    "description": "Stylish casual shirt with unique patterns, comfortable fabric, and modern fit. Perfect for casual outings and semi-formal occasions.",
+    "inventory": {
+      "stock": 28,
+      "reorderLevel": 8,
+      "costPrice": 2400,
+      "supplier": "Needles Fashion",
+      "sku": "NEED-Shirt-012"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Classic Cotton T-Shirt",
+    "brand": "Rehman's Collection",
+    "price": 1200,
+    "category": "Shirts",
+    "image": "images/t-shirt1.jpg",
+    "description": "100% cotton t-shirt with comfortable fit, breathable fabric, and durable construction. Available in various colors and designs.",
+    "inventory": {
+      "stock": 60,
+      "reorderLevel": 20,
+      "costPrice": 800,
+      "supplier": "Rehman Textiles",
+      "sku": "REHM-TShirt-013"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Premium Polo T-Shirt",
+    "brand": "Abdullah Collection",
+    "price": 1800,
+    "category": "Shirts",
+    "image": "images/t-shirt 2.avif",
+    "description": "Classic polo t-shirt with collar, button placket, and comfortable cotton blend fabric. Perfect for casual and semi-formal wear.",
+    "inventory": {
+      "stock": 45,
+      "reorderLevel": 15,
+      "costPrice": 1300,
+      "supplier": "Abdullah Fashion",
+      "sku": "ABDL-Polo-014"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Fashion Printed T-Shirt",
+    "brand": "ZellBurry",
+    "price": 2000,
+    "category": "Shirts",
+    "image": "images/t-shirt 3.webp",
+    "description": "Fashionable printed t-shirt with unique designs, soft fabric, and modern fit. Available in various trendy patterns and colors.",
+    "inventory": {
+      "stock": 38,
+      "reorderLevel": 12,
+      "costPrice": 1500,
+      "supplier": "ZellBurry Designs",
+      "sku": "ZELL-TShirt-015"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Malik Professional Cricket Bat",
+    "brand": "Malik",
+    "price": 8500,
+    "category": "Sports",
+    "image": "images/malik bats.jfif",
+    "description": "Professional grade English willow cricket bat with perfect balance, large sweet spot, and premium grip. Suitable for club-level players.",
+    "inventory": {
+      "stock": 20,
+      "reorderLevel": 6,
+      "costPrice": 6500,
+      "supplier": "Malik Sports",
+      "sku": "MALK-Bat-016"
+    }
+  },
+  {
+    "id": 17,
+    "name": "HS Premium English Willow Bat",
+    "brand": "HS",
+    "price": 12500,
+    "category": "Sports",
+    "image": "images/hs bats.webp",
+    "description": "Premium English willow cricket bat with excellent pick-up, large playing area, and professional finish. Used by many domestic players.",
+    "inventory": {
+      "stock": 15,
+      "reorderLevel": 5,
+      "costPrice": 9500,
+      "supplier": "HS Sports",
+      "sku": "HSSP-Bat-017"
+    }
+  },
+  {
+    "id": 18,
+    "name": "SS Grade 1 English Willow Bat",
+    "brand": "SS",
+    "price": 15000,
+    "category": "Sports",
+    "image": "images/ss bats.jpg",
+    "description": "Grade 1 English willow cricket bat with perfect balance, large sweet spot, and premium finish. Ideal for serious cricketers.",
+    "inventory": {
+      "stock": 12,
+      "reorderLevel": 4,
+      "costPrice": 11500,
+      "supplier": "SS Sports",
+      "sku": "SSSP-Bat-018"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Grey Nicolls Scoop Design Bat",
+    "brand": "Grey Nicolls",
+    "price": 22000,
+    "category": "Sports",
+    "image": "images/grey nicolls bat.jpg",
+    "description": "Premium English willow cricket bat with unique scoop design for enhanced performance, perfect balance, and professional finish.",
+    "inventory": {
+      "stock": 8,
+      "reorderLevel": 3,
+      "costPrice": 17000,
+      "supplier": "Grey Nicolls",
+      "sku": "GRNY-Bat-019"
+    }
+  },
+  {
+    "id": 20,
+    "name": "CA Babar Azam Edition Bat",
+    "brand": "CA",
+    "price": 25000,
+    "category": "Sports",
+    "image": "images/ca bat babar edition.jfif",
+    "description": "Limited edition cricket bat endorsed by Babar Azam. Premium English willow with perfect balance, large sweet spot, and professional finish.",
+    "inventory": {
+      "stock": 5,
+      "reorderLevel": 2,
+      "costPrice": 19000,
+      "supplier": "CA Sports",
+      "sku": "CABA-Bat-020"
+    }
+  },
+  {
+    "id": 21,
+    "name": "Professional Volleyball",
+    "brand": "Mikasa",
+    "price": 3500,
+    "category": "Sports",
+    "image": "images/volleyball.jfif",
+    "description": "Official size professional volleyball with premium grip and durability. Perfect for competitive play and training sessions.",
+    "inventory": {
+      "stock": 25,
+      "reorderLevel": 8,
+      "costPrice": 2500,
+      "supplier": "Mikasa Sports",
+      "sku": "MIKA-Ball-021"
+    }
+  },
+  {
+    "id": 22,
+    "name": "Nike Basketball",
+    "brand": "Nike",
+    "price": 4500,
+    "category": "Sports",
+    "image": "images/Nike Basketball.png",
+    "description": "Official size basketball with deep channel design for better grip and control. Durable construction for indoor and outdoor play.",
+    "inventory": {
+      "stock": 30,
+      "reorderLevel": 10,
+      "costPrice": 3200,
+      "supplier": "Nike Sports",
+      "sku": "NIKE-BBall-022"
+    }
+  },
+  {
+    "id": 23,
+    "name": "Apex 50 Hockey Stick",
+    "brand": "Apex",
+    "price": 6500,
+    "category": "Sports",
+    "image": "images/Hockey stick Apex 50.jpg",
+    "description": "Professional hockey stick with carbon composite construction for power and control. Lightweight design with excellent ball feel.",
+    "inventory": {
+      "stock": 18,
+      "reorderLevel": 6,
+      "costPrice": 4800,
+      "supplier": "Apex Sports",
+      "sku": "APEX-Hockey-023"
+    }
+  },
+  {
+    "id": 24,
+    "name": "Cricket White Hard Ball",
+    "brand": "Kookaburra",
+    "price": 1800,
+    "category": "Sports",
+    "image": "images/hard ball cricket white.jfif",
+    "description": "Professional cricket white ball with excellent seam and swing characteristics. Used in domestic and international matches.",
+    "inventory": {
+      "stock": 40,
+      "reorderLevel": 12,
+      "costPrice": 1200,
+      "supplier": "Kookaburra Sports",
+      "sku": "KOOK-BallW-024"
+    }
+  },
+  {
+    "id": 25,
+    "name": "Cricket Red Hard Ball",
+    "brand": "Kookaburra",
+    "price": 1600,
+    "category": "Sports",
+    "image": "images/Hard ball cricket.jfif",
+    "description": "Professional cricket red ball with traditional red color and excellent durability. Perfect for longer format matches.",
+    "inventory": {
+      "stock": 35,
+      "reorderLevel": 10,
+      "costPrice": 1100,
+      "supplier": "Kookaburra Sports",
+      "sku": "KOOK-BallR-025"
+    }
+  },
+  {
+    "id": 26,
+    "name": "Badminton Racket with Shuttlecocks",
+    "brand": "Yonex",
+    "price": 5500,
+    "category": "Sports",
+    "image": "images/badminton racket+ shuttlecock.jpg",
+    "description": "Professional badminton racket with lightweight graphite frame and high tension strings. Includes premium shuttlecocks.",
+    "inventory": {
+      "stock": 22,
+      "reorderLevel": 7,
+      "costPrice": 3800,
+      "supplier": "Yonex Sports",
+      "sku": "YONX-Badm-026"
+    }
+  },
+  {
+    "id": 27,
+    "name": "Professional Football",
+    "brand": "Adidas",
+    "price": 5000,
+    "category": "Sports",
+    "image": "images/football.jpg",
+    "description": "Official size professional football with textured surface for better control and accuracy. Suitable for all playing surfaces.",
+    "inventory": {
+      "stock": 28,
+      "reorderLevel": 9,
+      "costPrice": 3500,
+      "supplier": "Adidas Sports",
+      "sku": "ADID-Foot-027"
+    }
+  },
+  {
+    "id": 28,
+    "name": "Dell Inspiron Laptop",
+    "brand": "Dell",
+    "price": 85000,
+    "category": "Tech",
+    "image": "images/dell laptop.jpg",
+    "description": "15.6-inch Full HD laptop with Intel Core i5 processor, 8GB RAM, 512GB SSD, and dedicated graphics. Perfect for work and entertainment.",
+    "inventory": {
+      "stock": 8,
+      "reorderLevel": 3,
+      "costPrice": 72000,
+      "supplier": "Dell Pakistan",
+      "sku": "DELL-Insp-028"
+    }
+  },
+  {
+    "id": 29,
+    "name": "Apple MacBook Pro",
+    "brand": "Apple",
+    "price": 250000,
+    "category": "Tech",
+    "image": "images/macbook pro apple.webp",
+    "description": "14-inch MacBook Pro with M2 Pro chip, 16GB RAM, 1TB SSD, Liquid Retina XDR display. Professional performance for creative work.",
+    "inventory": {
+      "stock": 4,
+      "reorderLevel": 2,
+      "costPrice": 210000,
+      "supplier": "Apple Pakistan",
+      "sku": "APPL-MBP-029"
+    }
+  },
+  {
+    "id": 30,
+    "name": "Professional DSLR Camera",
+    "brand": "Canon",
+    "price": 120000,
+    "category": "Tech",
+    "image": "images/DSLR camera.jpg",
+    "description": "24.2MP DSLR camera with 4K video recording, Wi-Fi connectivity, and advanced autofocus system. Perfect for photography enthusiasts.",
+    "inventory": {
+      "stock": 6,
+      "reorderLevel": 2,
+      "costPrice": 95000,
+      "supplier": "Canon Pakistan",
+      "sku": "CANO-DSLR-030"
+    }
+  },
+  {
+    "id": 31,
+    "name": "Canon EOS Mirrorless Camera",
+    "brand": "Canon",
+    "price": 95000,
+    "category": "Tech",
+    "image": "images/canon camera.jpg",
+    "description": "20.1MP mirrorless camera with 4K video, dual pixel autofocus, and compact design. Ideal for vlogging and travel photography.",
+    "inventory": {
+      "stock": 9,
+      "reorderLevel": 3,
+      "costPrice": 78000,
+      "supplier": "Canon Pakistan",
+      "sku": "CANO-Mirror-031"
+    }
+  },
+  {
+    "id": 32,
+    "name": "Apple AirPods Pro 2",
+    "brand": "Apple",
+    "price": 45000,
+    "category": "Tech",
+    "image": "images/Airpods Pro 2.webp",
+    "description": "Active Noise Cancellation, Transparency mode, Spatial Audio, and MagSafe charging case. Up to 6 hours of listening time.",
+    "inventory": {
+      "stock": 15,
+      "reorderLevel": 5,
+      "costPrice": 38000,
+      "supplier": "Apple Pakistan",
+      "sku": "APPL-AirP2-032"
+    }
+  },
+  {
+    "id": 33,
+    "name": "Apple AirPods 3rd Generation",
+    "brand": "Apple",
+    "price": 35000,
+    "category": "Tech",
+    "image": "images/Airpods 3 third Generation.webp",
+    "description": "Spatial Audio, Adaptive EQ, sweat and water resistant, and MagSafe charging case. Up to 6 hours of listening time.",
+    "inventory": {
+      "stock": 20,
+      "reorderLevel": 6,
+      "costPrice": 29000,
+      "supplier": "Apple Pakistan",
+      "sku": "APPL-AirP3-033"
+    }
+  },
+  {
+    "id": 34,
+    "name": "ASPOR Power Bank 20000mAh",
+    "brand": "ASPOR",
+    "price": 3500,
+    "category": "Tech",
+    "image": "images/ASPOR power bank.jfif",
+    "description": "20000mAh high-capacity power bank with fast charging technology. Dual USB ports and LED indicator. Perfect for travel and daily use.",
+    "inventory": {
+      "stock": 35,
+      "reorderLevel": 10,
+      "costPrice": 2500,
+      "supplier": "ASPOR Electronics",
+      "sku": "ASPR-Power-034"
+    }
+  },
+  {
+    "id": 35,
+    "name": "Wireless Noise Cancelling Headphones",
+    "brand": "Sony",
+    "price": 15000,
+    "category": "Tech",
+    "image": "images/headphones.jfif",
+    "description": "Premium wireless headphones with active noise cancellation, 30-hour battery life, and comfortable over-ear design. Perfect for music and calls.",
+    "inventory": {
+      "stock": 12,
+      "reorderLevel": 4,
+      "costPrice": 11500,
+      "supplier": "Sony Pakistan",
+      "sku": "SONY-Head-035"
+    }
+  },
+  {
+    "id": 36,
+    "name": "Tecno Spark 10 Pro",
+    "brand": "Tecno",
+    "price": 35000,
+    "category": "Tech",
+    "image": "images/tecno spark 10.webp",
+    "description": "6.8-inch HD+ display, 8GB RAM, 256GB storage, 50MP triple camera, 5000mAh battery with 18W fast charging. Android 13 with HiOS.",
+    "inventory": {
+      "stock": 18,
+      "reorderLevel": 6,
+      "costPrice": 28000,
+      "supplier": "Tecno Mobile",
+      "sku": "TECN-Spark-036"
+    }
+  },
+  {
+    "id": 37,
+    "name": "Samsung Galaxy S25 Ultra",
+    "brand": "Samsung",
+    "price": 145000,
+    "category": "Tech",
+    "image": "images/samsung S25.webp",
+    "description": "6.2-inch Dynamic AMOLED 2X display, 12GB RAM, 256GB storage, triple camera system with 108MP main sensor, 4000mAh battery. 5G enabled.",
+    "inventory": {
+      "stock": 7,
+      "reorderLevel": 3,
+      "costPrice": 120000,
+      "supplier": "Samsung Pakistan",
+      "sku": "SAMS-S25U-037"
+    }
+  },
+  {
+    "id": 38,
+    "name": "Infinix Note 50 Pro",
+    "brand": "Infinix",
+    "price": 45000,
+    "category": "Tech",
+    "image": "images/infinix note 50 pro.png",
+    "description": "6.78-inch FHD+ 120Hz display, 8GB RAM, 256GB storage, 108MP triple camera, 5000mAh battery with 33W fast charging. MediaTek Helio G99 processor.",
+    "inventory": {
+      "stock": 14,
+      "reorderLevel": 5,
+      "costPrice": 36000,
+      "supplier": "Infinix Mobile",
+      "sku": "INFX-Note50-038"
+    }
+  },
+  {
+    "id": 39,
+    "name": "Redmi Note 14 Pro",
+    "brand": "Redmi",
+    "price": 52000,
+    "category": "Tech",
+    "image": "images/redmi note 14.png",
+    "description": "6.67-inch AMOLED display, 8GB RAM, 256GB storage, 64MP triple camera, 5000mAh battery with 67W fast charging. Snapdragon 7 Gen 3 processor.",
+    "inventory": {
+      "stock": 11,
+      "reorderLevel": 4,
+      "costPrice": 42000,
+      "supplier": "Redmi Pakistan",
+      "sku": "REDM-Note14-039"
+    }
+  },
+  {
+    "id": 40,
+    "name": "iPhone 17 Pro Max",
+    "brand": "Apple",
+    "price": 220000,
+    "category": "Tech",
+    "image": "images/iphone 17.webp",
+    "description": "6.1-inch Super Retina XDR display, A18 Bionic chip, 128GB storage, dual 12MP camera system, all-day battery life. iOS 18 with advanced features.",
+    "inventory": {
+      "stock": 5,
+      "reorderLevel": 2,
+      "costPrice": 185000,
+      "supplier": "Apple Pakistan",
+      "sku": "APPL-i17PM-040"
+    }
+  },
+  {
+    "id": 41,
+    "name": "Handmade Ceramic Showpiece",
+    "brand": "Artisan Crafts",
+    "price": 2500,
+    "category": "Home Décor",
+    "image": "images/Handmade ShowPiece.webp",
+    "description": "Beautiful handmade ceramic showpiece with intricate designs. Perfect for adding artistic touch to your living room or office space.",
+    "inventory": {
+      "stock": 25,
+      "reorderLevel": 8,
+      "costPrice": 1500,
+      "supplier": "Artisan Crafts",
+      "sku": "ARTI-Show-041"
+    }
+  },
+  {
+    "id": 42,
+    "name": "DIY Home Décor Set",
+    "brand": "Creative Home",
+    "price": 1800,
+    "category": "Home Décor",
+    "image": "images/DIY home decor.jfif",
+    "description": "Complete DIY home décor set with various decorative items. Create your own unique home styling with this versatile collection.",
+    "inventory": {
+      "stock": 30,
+      "reorderLevel": 10,
+      "costPrice": 1200,
+      "supplier": "Creative Home",
+      "sku": "CREA-DIY-042"
+    }
+  },
+  {
+    "id": 43,
+    "name": "Elegant Paper Craft Art",
+    "brand": "Paper Artistry",
+    "price": 1200,
+    "category": "Home Décor",
+    "image": "images/Paper craft.jpg",
+    "description": "Handcrafted paper art with delicate designs. Lightweight and elegant, perfect for wall decoration in any room.",
+    "inventory": {
+      "stock": 40,
+      "reorderLevel": 12,
+      "costPrice": 800,
+      "supplier": "Paper Artistry",
+      "sku": "PAPR-Craft-043"
+    }
+  },
+  {
+    "id": 44,
+    "name": "Large Metal Wall Clock",
+    "brand": "Time Masters",
+    "price": 4500,
+    "category": "Home Décor",
+    "image": "images/Large Metal wall clock.webp",
+    "description": "36-inch large metal wall clock with Roman numerals and silent movement. Makes a statement piece for your living room or office.",
+    "inventory": {
+      "stock": 15,
+      "reorderLevel": 5,
+      "costPrice": 3200,
+      "supplier": "Time Masters",
+      "sku": "TIME-Clock-044"
+    }
+  },
+  {
+    "id": 45,
+    "name": "Roman Numeral Wall Clock",
+    "brand": "Classic Time",
+    "price": 3800,
+    "category": "Home Décor",
+    "image": "images/Roman wall clock.webp",
+    "description": "Elegant wall clock with Roman numerals and wooden frame. Quartz movement with precise timekeeping and silent operation.",
+    "inventory": {
+      "stock": 18,
+      "reorderLevel": 6,
+      "costPrice": 2800,
+      "supplier": "Classic Time",
+      "sku": "CLAS-Clock-045"
+    }
+  }
+]

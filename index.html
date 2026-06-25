@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LootLo — Premium Online Shopping</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ AURORA BACKGROUND ============ -->
+<div class="aurora">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+    <span class="blob b4"></span>
+    <div class="grain"></div>
+</div>
+
+<!-- ============ GATEWAY LOGIN SCREEN ============ -->
+<div class="gateway" id="gateway">
+    <div class="gateway-card glass">
+        <div class="gateway-brand">
+            <div class="brand-mark"><i class="fas fa-bolt"></i></div>
+            <h1>Loot<span>Lo</span></h1>
+            <p class="tagline">Sign in to start the loot. Best deals, delivered.</p>
+        </div>
+
+        <div class="seg" id="authSeg">
+            <button class="seg-btn active" data-tab="login">Login</button>
+            <button class="seg-btn" data-tab="register">Register</button>
+            <button class="seg-btn" data-tab="admin">Admin</button>
+            <span class="seg-pill" id="segPill"></span>
+        </div>
+
+        <!-- Login -->
+        <form class="auth-pane active" id="pane-login" autocomplete="off">
+            <div class="field">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="loginEmail" placeholder="Email address" required>
+            </div>
+            <div class="field">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <i class="fas fa-eye toggle-eye" data-target="loginPassword"></i>
+            </div>
+            <button type="submit" class="btn-primary glow">
+                <span>Enter LootLo</span> <i class="fas fa-arrow-right-long"></i>
+            </button>
+        </form>
+
+        <!-- Register -->
+        <form class="auth-pane" id="pane-register" autocomplete="off">
+            <div class="field">
+                <i class="fas fa-user"></i>
+                <input type="text" id="regName" placeholder="Full name" required>
+            </div>
+            <div class="field">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="regEmail" placeholder="Email address" required>
+            </div>
+            <div class="field">
+                <i class="fas fa-phone"></i>
+                <input type="tel" id="regPhone" placeholder="Phone (03001234567)">
+            </div>
+            <div class="field">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="regPassword" placeholder="Create a password (min 6)" required>
+                <i class="fas fa-eye toggle-eye" data-target="regPassword"></i>
+            </div>
+            <button type="submit" class="btn-primary glow">
+                <span>Create my account</span> <i class="fas fa-sparkles"></i>
+            </button>
+        </form>
+
+        <!-- Admin -->
+        <form class="auth-pane" id="pane-admin" autocomplete="off">
+            <div class="admin-note"><i class="fas fa-user-shield"></i> Store owners only</div>
+            <div class="field">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="adminEmail" placeholder="Admin email" value="lootlo@gmail.com">
+            </div>
+            <div class="field">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="adminPassword" placeholder="Admin password">
+                <i class="fas fa-eye toggle-eye" data-target="adminPassword"></i>
+            </div>
+            <button type="submit" class="btn-primary glow dark">
+                <span>Open Admin Console</span> <i class="fas fa-gauge-high"></i>
+            </button>
+        </form>
+
+        <p class="gateway-foot">Crafted by <strong>Muhammad Hamza</strong></p>
+    </div>
+</div>
+
+<!-- ============ MAIN APP ============ -->
+<div class="app hidden" id="app">
+
+    <!-- Header -->
+    <header class="topbar glass">
+        <div class="logo" onclick="showShop()">
+            <span class="brand-mark sm"><i class="fas fa-bolt"></i></span>
+            <span>Loot<b>Lo</b></span>
+        </div>
+
+        <div class="searchwrap">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search products, brands, categories...">
+            <div class="suggestions" id="suggestions"></div>
+        </div>
+
+        <nav class="nav-actions">
+            <button class="icon-btn" id="themeToggle" title="Theme"><i class="fas fa-moon"></i></button>
+            <button class="icon-btn user-only" onclick="showWishlist()" title="Wishlist">
+                <i class="fas fa-heart"></i><span class="badge" id="wishBadge">0</span>
+            </button>
+            <button class="orders-pill user-only" onclick="showOrders()" title="My Orders">
+                <i class="fas fa-box"></i><span class="op-label">Orders</span><span class="badge" id="ordersBadge" style="display:none">0</span>
+            </button>
+            <button class="icon-btn user-only" onclick="showSupport()" title="Support"><i class="fas fa-headset"></i></button>
+            <button class="cart-pill user-only" onclick="showCart()" title="Cart">
+                <i class="fas fa-cart-shopping"></i><span class="cart-pill-label">Cart</span><span class="badge" id="cartBadge">0</span>
+            </button>
+            <button class="icon-btn admin-only" onclick="showAdmin()" title="Admin Console"><i class="fas fa-gauge-high"></i></button>
+            <div class="user-chip" id="userChip" onclick="toggleUserMenu()">
+                <span class="avatar" id="userAvatar">U</span>
+                <span id="userName">User</span>
+                <i class="fas fa-chevron-down"></i>
+                <div class="user-menu" id="userMenu">
+                    <div class="um-head"><span id="umName">User</span><small id="umEmail">user@mail.com</small></div>
+                    <button onclick="logout()"><i class="fas fa-right-from-bracket"></i> Logout</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Views -->
+    <main id="views">
+
+        <!-- SHOP -->
+        <section class="view active" id="view-shop">
+            <div class="hero glass">
+                <div class="hero-text">
+                    <span class="hero-kicker">✦ Mega Loot Season</span>
+                    <h1>Everything you love,<br><span class="grad">at loot prices.</span></h1>
+                    <p>Electronics, fashion, sports &amp; more — handpicked deals updated daily.</p>
+                    <div class="hero-coupons">
+                        <span class="coupon-tag" onclick="copyCoupon('LOOTLO10')">LOOTLO10 · 10% off</span>
+                        <span class="coupon-tag" onclick="copyCoupon('HAMZA20')">HAMZA20 · 20% off</span>
+                    </div>
+                </div>
+                <div class="hero-orbs"><i class="fas fa-gift"></i></div>
+            </div>
+
+            <!-- FLASH DEALS -->
+            <section class="deals-wrap" id="dealsWrap" style="display:none">
+                <div class="deals-head">
+                    <h2 class="section-title" style="margin:0"><i class="fas fa-bolt" style="color:var(--gold)"></i> Flash Deals</h2>
+                    <span class="deals-sub">Limited time — grab them before the timer runs out!</span>
+                </div>
+                <div class="deals-rail" id="dealsRail"></div>
+            </section>
+
+            <div class="toolbar">
+                <div class="chips" id="categoryChips"></div>
+                <div class="sortwrap">
+                    <select id="sortSelect" onchange="renderProducts()">
+                        <option value="default">Sort: Featured</option>
+                        <option value="low">Price: Low → High</option>
+                        <option value="high">Price: High → Low</option>
+                        <option value="rating">Top Rated</option>
+                    </select>
+                </div>
+            </div>
+
+            <h2 class="section-title" id="gridTitle">Featured Products</h2>
+            <div class="grid" id="productsGrid"></div>
+        </section>
+
+        <!-- WISHLIST -->
+        <section class="view" id="view-wishlist">
+            <button class="back-link" onclick="showShop()"><i class="fas fa-arrow-left"></i> Back to shopping</button>
+            <h2 class="section-title">My Wishlist <i class="fas fa-heart" style="color:var(--accent)"></i></h2>
+            <div class="grid" id="wishlistGrid"></div>
+        </section>
+
+        <!-- ORDERS -->
+        <section class="view" id="view-orders">
+            <button class="back-link" onclick="showShop()"><i class="fas fa-arrow-left"></i> Back to shopping</button>
+            <h2 class="section-title">My Orders</h2>
+            <div id="ordersList"></div>
+        </section>
+
+        <!-- SUPPORT -->
+        <section class="view" id="view-support">
+            <button class="back-link" onclick="showShop()"><i class="fas fa-arrow-left"></i> Back to shopping</button>
+            <h2 class="section-title">Customer Support</h2>
+            <div class="support-grid">
+                <div class="glass card-pad">
+                    <h3>Submit a query</h3>
+                    <div class="form-row"><input type="text" id="qSubject" placeholder="Subject"></div>
+                    <div class="form-row"><select id="qProduct"><option value="">Related product (optional)</option></select></div>
+                    <div class="form-row"><textarea id="qMessage" rows="5" placeholder="How can we help?"></textarea></div>
+                    <button class="btn-primary" onclick="submitQuery()"><i class="fas fa-paper-plane"></i> Send query</button>
+                </div>
+                <div class="glass card-pad">
+                    <h3>My queries</h3>
+                    <div id="queriesList"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADMIN -->
+        <section class="view" id="view-admin">
+            <button class="back-link" onclick="showShop()"><i class="fas fa-arrow-left"></i> Back to store</button>
+            <h2 class="section-title">Admin Console</h2>
+            <div class="stat-row" id="statRow"></div>
+            <div class="seg admin-seg" id="adminSeg">
+                <button class="seg-btn active" data-atab="products">Products</button>
+                <button class="seg-btn" data-atab="deals">Deals</button>
+                <button class="seg-btn" data-atab="inventory">Inventory</button>
+                <button class="seg-btn" data-atab="orders">Orders</button>
+                <button class="seg-btn" data-atab="queries">Queries</button>
+                <span class="seg-pill" id="adminPill"></span>
+            </div>
+            <div class="admin-pane active" id="apane-products"></div>
+            <div class="admin-pane" id="apane-deals"></div>
+            <div class="admin-pane" id="apane-inventory"></div>
+            <div class="admin-pane" id="apane-orders"></div>
+            <div class="admin-pane" id="apane-queries"></div>
+        </section>
+    </main>
+
+    <!-- Floating live order tracker (shown while an order is in progress) -->
+    <button class="order-fab hidden" id="orderFab" onclick="trackLatestOrder()">
+        <span class="fab-icon"><i class="fas fa-truck-fast"></i></span>
+        <span class="fab-info">
+            <span class="fab-title" id="fabTitle">Order</span>
+            <span class="fab-sub" id="fabSub">Tap to track</span>
+        </span>
+        <span class="fab-cta">Track <i class="fas fa-arrow-right"></i></span>
+    </button>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <div class="logo"><span class="brand-mark sm"><i class="fas fa-bolt"></i></span> Loot<b>Lo</b></div>
+                <p>Your trusted destination for electronics, fashion, sports &amp; home — at loot prices.</p>
+            </div>
+            <div>
+                <h4>Developer</h4>
+                <p>Muhammad Hamza</p>
+                <p><i class="fas fa-envelope"></i> i.muhammadhamza2210@gmail.com</p>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                <p><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</p>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 LootLo · Built with ❤ by Muhammad Hamza</div>
+    </footer>
+</div>
+
+<!-- ============ MODAL HOST ============ -->
+<div class="modal-host" id="modalHost">
+    <div class="modal-card glass" id="modalCard"></div>
+</div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast-host" id="toastHost"></div>
+
+<!-- ============ CONFETTI ============ -->
+<canvas id="confetti"></canvas>
+
+<script src="app.js"></script>
+</body>
+</html>

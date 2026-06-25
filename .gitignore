@@ -1,0 +1,42 @@
+# ===== Secrets — NEVER commit =====
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets.toml
+.streamlit/secrets.toml
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ===== Node =====
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# ===== Local databases (recreated by the app) =====
+*.db
+*.sqlite
+*.sqlite3
+
+# ===== OS / Editor =====
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# ===== Logs =====
+*.log
+npm-debug.log*
+
+# ===== Misc =====
+_backup_old/

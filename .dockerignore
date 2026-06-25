@@ -1,0 +1,6 @@
+__pycache__
+*.pyc
+lootlo.db
+_backup_old
+.git
+*.log
